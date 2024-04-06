@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creator QR-Code</title>
+  <link rel="icon" type="image/gif" href="assets/qr_code.gif">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="languageSelector">
+    <img class="flag" src="assets/es_flag.png" alt="Español" data-lang="es">
+    <img class="flag" src="assets/en_flag.png" alt="English" data-lang="en">
+    <img class="flag" src="assets/pt_flag.png" alt="Português" data-lang="pt">
+    <img class="flag" src="assets/fr_flag.png" alt="Français" data-lang="fr">
+    <img class="flag" src="assets/nl_flag.png" alt="Nederlands" data-lang="nl">
+  </nav>
+  
+  <div class="wrapper">
+    <header>
+      <h1 data-i18n="CodeGenerator.title">Generador de Códigos</h1>
+      <p data-i18n="CodeGenerator.subtitle">Pegue el texto o ingrese la URL</p>
+    </header>
+    <div class="form">
+      <input type="text" spellcheck="false">
+      <button class="generateBtn" data-i18n="CodeGenerator.generateBtn">Generar código QR</button>
+    </div>
+    <div class="qr-code">
+      <img class="qrImg" src="" alt="qr-code">
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/i18next/dist/umd/i18next.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector/umd/i18nextBrowserLanguageDetector.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
